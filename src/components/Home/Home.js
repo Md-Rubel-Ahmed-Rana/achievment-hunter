@@ -1,9 +1,21 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import MainHeader from '../MainHeader/MainHeader';
+import DisplayQuiz from '../Quizes/DisplayQuiz';
 
 const Home = () => {
+    const {data} = useLoaderData();
+
     return (
-        <div>
-            <h3>This is Home</h3>
+        <div className='bg-black py-5 md:px-40 px-10'>
+            <div>
+                    <MainHeader />
+            </div>
+            <div className='md:flex justify-between gap-4'>
+                {
+                    data.map((quiz) => <DisplayQuiz quiz={quiz} key={quiz.id} />)
+                }
+             </div>
         </div>
     );
 };
