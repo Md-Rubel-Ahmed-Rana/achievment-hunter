@@ -8,7 +8,7 @@ const Options = ({ option, checkAnswer }) => {
         <div>
             <div className='bg-white m-2 p-5 text-black rounded-lg'>
                 <input onClick={() => checkAnswer(option, toast)} type="radio" name="option" id="" className='cursor-pointer' />
-                <label className='text-xl m-2'>{option}</label>
+                <label className='md:text-xl m-2'>{option}</label>
             </div>
             
             <ToastContainer

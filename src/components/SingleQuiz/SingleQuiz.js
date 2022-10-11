@@ -5,11 +5,12 @@ import Questions from '../Questions/Questions';
 const SingleQuiz = () => {
     const [correct, setCorrect] = useState(0);
     const [notCorrect, setNotCorrect] = useState(0);
+    
     const quiz = useLoaderData();
     const {name, questions} = quiz.data;
 
     return (
-        <div className='bg-slate-600 py-10 md:px-40'>
+        <div className='bg-black py-10 md:px-40'>
             <div className='md:flex justify-between'>
                 <div className='md:ml-96'>
                     <h3 className='text-white text-center text-4xl mb-2'>Quiz of {name}</h3>
@@ -20,7 +21,7 @@ const SingleQuiz = () => {
                     <h6 className='text-2xl text-white'>Total Wrong: {notCorrect}</h6>
                 </div>
             </div>
-            <div>
+            <div className='p-10'>
                 {
                     questions.map((singleQuestion, serial) => <Questions 
                     singleQuestion={singleQuestion} 
