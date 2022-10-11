@@ -5,7 +5,7 @@ const DisplayQuiz = ({quiz}) => {
     const {id, logo, name, total} = quiz;
 
     return (
-        <div className='bg-blue-900 p-4 rounded-lg mb-2 '>
+        <div className='bg-blue-900 text-center p-4 rounded-lg mb-2 '>
             <img src={logo} alt="" className='w-80 h-48 border-b pb-3 mx-auto' />
             <div className='flex justify-between text-white px-2 py-1'>
                 <h4>{name}</h4>

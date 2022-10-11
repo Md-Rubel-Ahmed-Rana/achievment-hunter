@@ -13,22 +13,21 @@ const Options = ({ option, correctAnswer }) => {
         }
     }
     return (
-        <div>
-            <p onClick={() => checkAnswer(option)} className='bg-emerald-600 m-2 p-5 text-white rounded-lg cursor-pointer'>
-                <small> <input type="radio" name="" id="" /> </small>
-                <small className='text-xl'>{option}</small>
-            </p>
+        <div className='grid grid-cols-1'>
+            <div onClick={() => checkAnswer(option)} className='bg-white m-2 p-5 text-black rounded-lg cursor-pointer'>
+                 <input type="radio" name="option" id="" className='cursor-pointer' />
+                <label className='text-xl m-2'>{option}</label>
+            </div>
+            
             <ToastContainer
-                position="top-center"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
+                position= "top-center"
+                autoClose= {2000}
+                hideProgressBar= {false}
+                closeOnClick= {true}
+                pauseOnHover= {false}
+                draggable= {true}
+                progress= "undefined"
+                theme= "light"
             />
         </div>
     );
