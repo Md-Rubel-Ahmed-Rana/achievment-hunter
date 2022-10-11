@@ -15,7 +15,7 @@ const Questions = ({ singleQuestion, serial, correct, setCorrect, notCorrect, se
         }
     }
     const showAnswer = () => {
-        swal("Correct Answer is: ",correctAnswer)
+        swal("Correct Answer is: " , correctAnswer)
     }
     return (
         <div className='border rounded-md my-2 p-4'>
