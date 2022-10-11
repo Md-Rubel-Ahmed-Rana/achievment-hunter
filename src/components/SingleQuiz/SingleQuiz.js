@@ -17,8 +17,8 @@ const SingleQuiz = () => {
                     <h4 className='text-4xl text-white text-center mb-3'>Total Quiz: {questions.length}</h4>
                 </div>
                 <div className='text-center'>
-                    <h6 className='text-2xl text-white'>Total Correct: {correct}</h6>
-                    <h6 className='text-2xl text-white'>Wrong Clicked: {notCorrect}</h6>
+                    <h6 className='text-2xl text-white'>Correct: {correct}</h6>
+                    <h6 className='text-2xl text-white'>Incorrect: {notCorrect}</h6>
                 </div>
             </div>
             <div className='md:p-10'>
