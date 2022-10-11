@@ -10,7 +10,7 @@ const Options = ({ option, checkAnswer }) => {
     
     return (
         <div>
-            <div className='bg-white m-2 p-5 text-black rounded-lg'>
+            <div className='bg-white flex items-center gap-2 m-2 p-5 text-black rounded-lg'>
                 <input onClick={() => checkAnswer(option, toast)} type="radio" name="option" id="" className='cursor-pointer' />
                 <label className='md:text-xl m-2'>{option}</label>
             </div>
