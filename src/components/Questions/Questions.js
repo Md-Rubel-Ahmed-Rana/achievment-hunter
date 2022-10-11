@@ -32,7 +32,7 @@ const Questions = ({ singleQuestion, serial, correct, setCorrect, notCorrect, se
 
             <div className='grid md:grid-cols-2  mx-auto p-2'>
                 {
-                    options.map((option, index) => <Options option={option} key={index} correctAnswer={correctAnswer} checkAnswer={checkAnswer} />)
+                    options.map((option, index) => <Options option={option} key={index} checkAnswer={checkAnswer} />)
                 }
             </div>
         </div>
