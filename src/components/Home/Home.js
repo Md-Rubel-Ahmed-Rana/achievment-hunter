@@ -11,7 +11,7 @@ const Home = () => {
             <div>
                 <Header />
             </div>
-            <div className='md:flex justify-between gap-4'>
+            <div className='md:flex justify-between  gap-4'>
                 {
                     data.map((quiz) => <DisplayQuiz quiz={quiz} key={quiz.id} />)
                 }

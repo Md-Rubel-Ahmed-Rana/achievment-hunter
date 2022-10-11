@@ -10,7 +10,7 @@ const Navbar = () => {
     };
 }
     return (
-        <div className='bg-[#1e2b47] md:flex md:justify-between justify:center items-center text-center py-3 px-10 border-b'>
+        <div className='bg-[#1e2b47] md:flex md:justify-between justify:center items-center text-center py-3 px-28 md:px-40 border-b'>
             <div className='flex items-center gap-4'>
                 <img className='w-12 h-12 rounded-full' src={Logo} alt="logo" />
                 <h3 className='md:text-3xl text-white text-xl font-bold'>Achievment Hunter</h3>
