@@ -7,10 +7,10 @@ const Questions = ({ singleQuestion, serial, correct, setCorrect, notCorrect, se
     const { question, options, correctAnswer }  = singleQuestion;
     const checkAnswer = (answer, toast) => {
         if (answer === correctAnswer) {
-            toast("Your Answer is currect");
+            toast("Your Answer is correct");
             setCorrect(correct + 1)
         } else {
-            toast("Your Answer is not currect");
+            toast("Your Answer is not correct");
             setNotCorrect(notCorrect + 1)
         }
     }

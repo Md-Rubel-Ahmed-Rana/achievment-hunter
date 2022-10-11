@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import MainHeader from '../MainHeader/MainHeader';
+import Header from '../Header/Header';
 import DisplayQuiz from '../Quizes/DisplayQuiz';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className='bg-black py-5 md:px-40 px-10'>
             <div>
-                    <MainHeader />
+                <Header />
             </div>
             <div className='md:flex justify-between gap-4'>
                 {

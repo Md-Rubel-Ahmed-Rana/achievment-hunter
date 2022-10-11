@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Options = ({ option, checkAnswer }) => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <div>
             <div className='bg-white m-2 p-5 text-black rounded-lg'>

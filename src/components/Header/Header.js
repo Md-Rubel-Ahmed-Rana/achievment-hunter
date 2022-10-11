@@ -1,26 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import Logo from "../../images/logo.png";
+import BannerImg  from "../../images/banner.png"
+
 
 const Header = () => {
-   const  style = ({ isActive }) => {
-    return {
-        textDecoration: isActive ? "underline" : null,
-        color: isActive ? "red" : null
-    };
-}
     return (
-        <div className='bg-[#1e2b47] md:flex md:justify-between justify:center items-center text-center py-3 px-10 border-b'>
-            <div className='flex items-center gap-4'>
-                <img className='w-12 h-12 rounded-full' src={Logo} alt="logo" />
-                <h3 className='md:text-3xl text-white text-xl font-bold'>Achievment Hunter</h3>
+        <div className='md:flex bg-gray-900 justify-between gap-10 mb-5 py-3 px-3 rounded-md'>
+            <div>
+                <img style={{width: "900px"}} className='md:mr-10 h-40' src={BannerImg} alt="" />
             </div>
-            <nav className='text-white flex gap-3'>
-                <NavLink style={style} to="/home" className="md:text-2xl text-xl">Home</NavLink>
-                <NavLink style={style} to="/quizes" className="md:text-2xl text-xl">Quizes</NavLink>
-                <NavLink style={style} to="/statistics" className="md:text-2xl text-xl">Statistics</NavLink>
-                <NavLink style={style} to="/blogs" className="md:text-2xl text-xl">Blogs</NavLink>
-            </nav>
+            <div className="my-2">
+                <h2 className='md:text-4xl mb-2 text-xl text-white'>Boost Your Coding Productibity</h2>
+                <p className='text-white md:text-2xl'>Welcome to our coding chellage website. This is the world class website where you can judge your coding level. So, take a chellage right now! Best of luck.</p>
+            </div>
         </div>
     );
 };
