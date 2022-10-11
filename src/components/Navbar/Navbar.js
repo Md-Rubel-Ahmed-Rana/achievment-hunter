@@ -5,8 +5,9 @@ import Logo from "../../images/logo.png";
 const Navbar = () => {
    const  style = ({ isActive }) => {
     return {
-        textDecoration: isActive ? "underline" : null,
-        color: isActive ? "red" : null
+        // textDecoration: isActive ? "underline" : null,
+        color: isActive ? "black" : null,
+        backgroundColor: isActive ? "white" : null,
     };
 }
     return (
@@ -16,10 +17,10 @@ const Navbar = () => {
                 <h3 className='md:text-3xl text-white text-xl font-bold'>Achievment Hunter</h3>
             </div>
             <nav className='text-white flex gap-3'>
-                <NavLink style={style} to="/home" className="md:text-2xl text-xl">Home</NavLink>
-                <NavLink style={style} to="/quizes" className="md:text-2xl text-xl">Quizes</NavLink>
-                <NavLink style={style} to="/statistics" className="md:text-2xl text-xl">Statistics</NavLink>
-                <NavLink style={style} to="/blogs" className="md:text-2xl text-xl">Blogs</NavLink>
+                <NavLink style={style} to="/home" className="md:text-2xl text-xl font-semi-bold px-2">Home</NavLink>
+                <NavLink style={style} to="/quizes" className="md:text-2xl font-semi-bold text-xl px-2">Quizes</NavLink>
+                <NavLink style={style} to="/statistics" className="md:text-2xl font-semi-bold text-xl px-2">Statistics</NavLink>
+                <NavLink style={style} to="/blogs" className="md:text-2xl font-semi-bold text-xl px-2">Blogs</NavLink>
             </nav>
         </div>
     );
