@@ -14,14 +14,14 @@ const SingleQuiz = () => {
             <div className='md:flex justify-between'>
                 <div className='md:ml-96'>
                     <h3 className='text-white text-center text-4xl mb-2'>Quiz of {name}</h3>
-                    <h4 className='text-3xl text-white text-center mb-3'>Total Questions: {questions.length}</h4>
+                    <h4 className='text-4xl text-white text-center mb-3'>Total Quiz: {questions.length}</h4>
                 </div>
                 <div className='text-center'>
                     <h6 className='text-2xl text-white'>Total Correct: {correct}</h6>
                     <h6 className='text-2xl text-white'>Total Wrong: {notCorrect}</h6>
                 </div>
             </div>
-            <div className='p-10'>
+            <div className='md:p-10'>
                 {
                     questions.map((singleQuestion, serial) => <Questions 
                     singleQuestion={singleQuestion} 

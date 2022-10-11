@@ -18,9 +18,9 @@ const Questions = ({ singleQuestion, serial, correct, setCorrect, notCorrect, se
         swal("Correct Answer is: " , correctAnswer)
     }
     return (
-        <div className='border rounded-md my-2 p-4'>
+        <div className='md:border border-b rounded-md my-4 p-2'>
             <div className='flex justify-between'>
-                <h3 className='md:text-2xl text-xl px-2 text-white mb-5'><strong>Question-{serial + 1}:</strong> {question}</h3>
+                <h3 className='md:text-xl  px-2 text-white mb-5'><strong>Quiz-{serial + 1}:</strong> {question}</h3>
 
                 <div title='See correct answer' >
                     <svg onClick={showAnswer}  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 cursor-pointer  bg-blue-900 text-white rounded-full">
