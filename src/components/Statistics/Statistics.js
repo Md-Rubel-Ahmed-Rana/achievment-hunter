@@ -9,6 +9,7 @@ const Statistics = () => {
     const total = []
     return (
         <div>
+            <h3 className='md:text-3xl text-xl text-white bg-gray-900 text-center pt-10'>Total Questions on a Topic.</h3>
             {
                 ChartData.forEach(topic => {
                     total.push(topic.total)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { LineChart, Legend, Line, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+import {ResponsiveContainer, LineChart, Legend, Line, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 
 const ShowStatistics = ({name, total}) => {
     const data = [
@@ -10,17 +10,21 @@ const ShowStatistics = ({name, total}) => {
     ]
     
     return (
-        <div className='bg-gray-900 md:px-40 py-28 flex justify-center'>
-            <LineChart  width={400} height={250} data={data}
-                margin={{ top: 5, right: 60, left: 20, bottom: 5 }}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Line type="monotone" dataKey="Question" stroke="#8884d8" />
-            </LineChart>
-        </div>
+        <>
+            <div className='bg-gray-900 md:px-40 py-12 flex justify-center'>
+                <ResponsiveContainer className="mr-10" width={`90%`} height={300}>
+                <LineChart  data={data}
+                    margin={{ top: 5, right: 10, left: 20, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Line type="monotone" dataKey="Question" stroke="#8884d8" />
+                </LineChart>
+                </ResponsiveContainer>
+            </div>
+        </>
     );
 };
 
