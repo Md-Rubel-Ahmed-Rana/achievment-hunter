@@ -4,7 +4,7 @@ import BannerImg  from "../../images/banner.png"
 
 const Header = () => {
     return (
-        <div className='md:flex bg-gray-800 justify-between gap-10 mb-5 py-3 px-3 rounded-md'>
+        <div className='md:flex bg-gray-800 justify-between gap-10  md:py-20 py-5 mb-6 px-3 rounded-md'>
             <div>
                 <img style={{width: "900px"}} className='md:mr-10 h-40' src={BannerImg} alt="" />
             </div>
